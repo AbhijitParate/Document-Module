@@ -46,7 +46,7 @@ public class DocumentController {
 			response.flushBuffer();
 		}
 		catch (IOException e) {
-			response.setStatus(500);
+			response.setStatus(404);
 		}
 	}
 	

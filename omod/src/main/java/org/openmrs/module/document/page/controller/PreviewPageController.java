@@ -21,7 +21,8 @@ import javax.servlet.http.HttpServletRequest;
 
 public class PreviewPageController {
 	
-	public void controller(HttpServletRequest request, @RequestParam("file") String fileName, PageModel pageModel) {
+	public void controller(HttpServletRequest request, @RequestParam(value = "file", required = false) String fileName,
+	        PageModel pageModel) {
 		pageModel.addAttribute("filename", fileName);
 	}
 	

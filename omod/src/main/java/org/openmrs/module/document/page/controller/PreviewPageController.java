@@ -10,6 +10,7 @@
 package org.openmrs.module.document.page.controller;
 
 import org.openmrs.ui.framework.page.PageModel;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -18,10 +19,10 @@ import javax.servlet.http.HttpServletRequest;
  * 'module/document/documentLink.form'.
  */
 
-public class PreviewController {
+public class PreviewPageController {
 	
-	public void controller(HttpServletRequest request, PageModel pageModel) {
-		pageModel.addAttribute("test", "It works!!!");
+	public void controller(HttpServletRequest request, @RequestParam("file") String fileName, PageModel pageModel) {
+		pageModel.addAttribute("filename", fileName);
 	}
 	
 }

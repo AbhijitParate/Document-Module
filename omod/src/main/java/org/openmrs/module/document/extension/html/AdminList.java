@@ -9,11 +9,11 @@
  */
 package org.openmrs.module.document.extension.html;
 
-import java.util.HashMap;
-import java.util.Map;
-
 import org.openmrs.module.Extension;
 import org.openmrs.module.web.extension.AdministrationSectionExt;
+
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * This class defines the links that will appear on the administration page under the
@@ -43,8 +43,11 @@ public class AdminList extends AdministrationSectionExt {
 		
 		Map<String, String> map = new HashMap<String, String>();
 		
-		map.put("module/document/document.form", "document.title");
-		map.put("document/document.page", "document.refapp.title");
+		map.put("module/document/document.form", "Document web controller");
+		map.put("module/document/upload.form", "Upload web controller");
+		
+		map.put("document/document.page", "Upload file page");
+		map.put("document/preview.page", "Preview file page");
 		
 		return map;
 	}

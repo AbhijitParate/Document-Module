@@ -69,6 +69,7 @@ public class UploadController {
 		
 		File file = new File(folder, fileName);
 		BufferedOutputStream stream = new BufferedOutputStream(new FileOutputStream(file));
+		fileDataUrl = fileDataUrl.substring(fileDataUrl.indexOf(",") + 1);
 		stream.write(Base64.decodeBase64(fileDataUrl.getBytes()));
 		stream.close();
 		

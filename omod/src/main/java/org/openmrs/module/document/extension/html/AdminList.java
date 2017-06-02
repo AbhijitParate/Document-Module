@@ -43,11 +43,11 @@ public class AdminList extends AdministrationSectionExt {
 		
 		Map<String, String> map = new HashMap<String, String>();
 		
-		map.put("module/document/document.form", "Document web controller");
-		map.put("module/document/upload.form", "Upload web controller");
+		map.put("module/document/document.form?file=", "Controller: Get file");
+		map.put("module/document/upload.form", "Controller: Upload file");
 		
-		map.put("document/document.page", "Upload file page");
-		map.put("document/preview.page", "Preview file page");
+		map.put("document/document.page", "Page: Upload file page");
+		map.put("document/preview.page?file=", "Page: Preview file page");
 		
 		return map;
 	}

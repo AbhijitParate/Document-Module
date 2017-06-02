@@ -28,7 +28,7 @@ import java.io.InputStream;
  * 'module/document/documentLink.form'.
  */
 @Controller("${rootrootArtifactId}.DocumentController")
-@RequestMapping(value = "module/document/document.form")
+@RequestMapping(value = "document/document.form")
 public class DocumentController {
 	
 	@RequestMapping(method = RequestMethod.GET)

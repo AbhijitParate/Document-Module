@@ -50,7 +50,7 @@
 
     function initUpload(file) {
         var xhr = new XMLHttpRequest();
-        var uri = "/openmrs/module/document/upload.form";
+        var uri = "upload.form";
         xhr.open("POST", uri);
         xhr.overrideMimeType('text/plain; charset=x-user-defined-binary');
 

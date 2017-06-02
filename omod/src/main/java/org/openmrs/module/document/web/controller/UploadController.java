@@ -32,7 +32,7 @@ import java.io.IOException;
  * 'module/document/documentLink.form'.
  */
 @Controller("${rootrootArtifactId}.UploadController")
-@RequestMapping(value = "module/document/upload.form")
+@RequestMapping(value = "document/upload.form")
 public class UploadController {
 	
 	/** Logger for this class and subclasses */
